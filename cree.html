@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cree Information</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Cree</h1>
+      <img src="PLACEHOLDER_IMAGE_URL_CREE_LOGO.jpg" alt="Cree Nation Logo" class="logo"> <!-- Replace with actual image URL -->
+      <div class="spacer"></div>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/4p0cGN1ahK0?si=wHzr6zPIOE2p13N9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </header>
+
+  <nav>
+    <div class="container">
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span>Menu</span> </label>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <ul class="nav-list">
+        <li><a href="#">BILLINGS, MT</a></li>
+        <li><a href="#">CROW RESERVATION</a></li>
+        <li><a href="#">LEWIS AND CLARK FOREST</a></li>
+        <li><a href="#">BLACKFOOT RESERVATION</a></li>
+		<li><a href="blackfoot.html">Blackfoot</a></li>
+		<li><a href="cheyenne.html">Cheyenne</a></li>
+		<li><a href="sioux.html">Sioux</a></li>
+		<li><a href="cree.html">Cree</a></li>
+		<li><a href="mohawk.html">Mohawk</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="content">
+      <div class="container grid-container">
+        <article class="grid-item">
+          <h2>Cree Languages</h2>
+          <p>The Cree languages are a group of Algonquian languages spoken by various Cree First Nations across Canada.  Discuss the different dialects, their relationships, and their current status.  Include information on language revitalization projects and efforts to preserve Cree languages.</p>
+        </article>
+
+        <aside class="grid-item">
+          <h3>Cultural Significance of Language</h3>
+          <p>Discuss the importance of language preservation for Cree culture and the role of language in maintaining identity and traditions.</p>
+        </aside>
+
+        <article class="grid-item">
+          <h2>Culture and History</h2>
+          <p>Provide an overview of Cree culture and history, including traditional practices, social structures, beliefs, and significant historical events.  You might want to mention different Cree groups and their unique cultural aspects.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <div class="container">
+        <form method="POST" action="https://formspree.io/YOUR_FORMSPREE_ENDPOINT">
+          <fieldset>
+            <legend>Contact Us</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="_replyto" required>
+            <label>Inquiry Type:</label><br>
+            <label><input type="radio" name="inquiry" value="General" required> General Inquiry</label>
+            <label><input type="radio" name="inquiry" value="Language"> Language Question</label>
+            <label>
+              <input type="checkbox" name="newsletter" value="yes"> Subscribe to Newsletter
+            </label>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+
+            <label for="topic">Select a Topic:</label>
+            <select id="topic" name="topic">
+              <option value="">Select a topic</option>
+              <option value="Cree Language">Cree Language</option>
+              <option value="Cree Culture">Cree Culture</option>
+              <option value="Other">Other</option>
+            </select>
+
+            <input type="hidden" name="_next" value="https://yourwebsite.com/thankyou">
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Some footer text here</p>
+      <a href="index.html">Go to Crow Information</a>
+      <a href="blackfoot.html">Go to Blackfoot Information</a>
+      <a href="cheyenne.html">Go to Northern Cheyenne Information</a>
+      <a href="sioux.html">Go to Assiniboine & Sioux (Fort Peck) Information</a>
+      <a href="mohawk.html">Go to Mohawk Information</a>
+    </div>
+  </footer>
+</body>
+</html>
