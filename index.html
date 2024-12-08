@@ -22,10 +22,10 @@
         <span>Menu</span> </label>
       <input type="checkbox" id="nav-toggle" class="nav-toggle">
       <ul class="nav-list">
-        <li><a href="https://en.wikipedia.org/wiki/Billings,_Montana">BILLINGS, MT</a></li>
-        <li><a href="https://en.wikipedia.org/wiki/Crow_Indian_Reservation">CROW RESERVATION</a></li>
-        <li><a href="https://en.wikipedia.org/wiki/Lewis_and_Clark_National_Forest">LEWIS AND CLARK FOREST</a></li>
-        <li><a href="https://en.wikipedia.org/wiki/Blackfeet_Nation">BLACKFOOT RESERVATION</a></li>
+        <li><a href="#">BILLINGS, MT</a></li>
+        <li><a href="#">CROW RESERVATION</a></li>
+        <li><a href="#">LEWIS AND CLARK FOREST</a></li>
+        <li><a href="#">BLACKFOOT RESERVATION</a></li>
 		<li><a href="blackfoot.html">Blackfoot</a></li>
 		<li><a href="cheyenne.html">Cheyenne</a></li>
 		<li><a href="sioux.html">Sioux</a></li>
@@ -56,56 +56,49 @@
     </section>
 
     <section class="form-section">
-      <div class="container">
-        <form method="POST" action="https://formspree.io/YOUR_FORMSPREE_ENDPOINT">
-          <fieldset>
-            <legend>Contact Us</legend>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+  <div class="container">
+    <form method="POST" action="https://formspree.io/f/xovqzejw">
+      <fieldset>
+        <legend>Contact Us</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="_replyto" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="_replyto" required>
 
-            <label>Inquiry Type:</label>
-            <br>
-            <label><input type="radio" name="inquiry" value="General" required> General Inquiry</label>
-            <label><input type="radio" name="inquiry" value="Language"> Language Question</label>
+        <label>Inquiry Type:</label>
+        <br>
+        <label><input type="radio" name="inquiry" value="General" required> General Inquiry</label>
+        <label><input type="radio" name="inquiry" value="Language"> Language Question</label>
 
-            <label>
-              <input type="checkbox" name="newsletter" value="yes"> Subscribe to Newsletter
-            </label>
+        <label>
+          <input type="checkbox" name="newsletter" value="yes"> Subscribe to Newsletter
+        </label>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5"></textarea>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5"></textarea>
 
+        <label for="topic">Select a Topic:</label>
+        <select id="topic" name="topic">
+          <option value="">Select a topic</option>
+          <option value="Crow Language">Crow Language</option>
+          <option value="Crow Culture">Crow Culture</option>
+          <option value="Other">Other</option>
+        </select>
 
-            <label for="topic">Select a Topic:</label>
-            <select id="topic" name="topic">
-              <option value="">Select a topic</option>
-              <option value="Crow Language">Crow Language</option>
-              <option value="Crow Culture">Crow Culture</option>
-              <option value="Other">Other</option>
-            </select>
+        <input type="hidden" name="_next" value="https: achandrakasan.pythonanywhere.com"> 
 
-            <input type="hidden" name="_next" value="https://yourwebsite.com/thankyou"> {/*Optional: Redirect after submission */}
-
-            <button type="submit">Submit</button>
-            <button type="reset">Reset</button>
-          </fieldset>
-        </form>
-      </div>
-    </section>
-
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </fieldset>
+    </form>
+  </div>
+</section>
   </main>
 
   <footer>
     <div class="container">
       <p>MONTANA NATIVE PEOPLE ASC</p>
-	  <p><a href="blackfoot.html">Go to Blackfoot</a>  <!-- Link to index.html -->
-	  <p><a href="cheyenne.html">Go to Cheyenne</a>  <!-- Link to index.html -->
-	  <p><a href="sioux.html">Go to Sioux Information</a>
-	  <p><a href="cree.html">Go to Cree Information</a>
-	  <p><a href="mohawk.html">Go to Mohawk Information</a>
     </div>
   </footer>
 </body>
