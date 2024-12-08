@@ -115,6 +115,9 @@ nav .nav-list a {
   text-decoration: none;
   color: white;
 }
+nav a {
+  color: white;
+}
 
 /* Responsive Layout Adjustments */
 @media (max-width: 1199px) {
