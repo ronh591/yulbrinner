@@ -109,8 +109,9 @@ button:hover {
   margin-bottom: 5px;
   border-bottom: 1px solid #ccc; /*Added*/
   padding: 10px 0;/*Added*/
+    color: white
 }
-nav .nav-list a {
+ .nav-list  a {
   color: white;
 }
 
